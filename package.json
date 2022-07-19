@@ -1,0 +1,60 @@
+{
+  "name": "contentstack-nuxtjs-starter-app",
+  "description": "A simple starter app build using NuxtJS and Contentstack",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "author": "Contentstack",
+  "license": "MIT",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "lint:js": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/eslint-config": "10.0.0",
+    "@nuxtjs/eslint-config-typescript": "^10.0.0",
+    "@nuxtjs/eslint-module": "^3.1.0",
+    "async": "^3.2.4",
+    "babel-eslint": "^10.1.0",
+    "contentstack": "^3.15.2",
+    "core-js": "^3.23.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^3.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
+    "nuxt": "3.0.0-rc.3",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "@contentstack/live-preview-utils": "^1.1.0",
+    "@contentstack/utils": "^1.1.2",
+    "@nuxt/content": "^2.0.1",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/robots": "^2.5.0",
+    "@nuxtjs/router": "^1.7.0",
+    "moment": "^2.29.3",
+    "node-html-parser": "^5.3.3",
+    "vue-json-viewer": "^2.2.22",
+    "vue-router": "^4.0.16",
+    "webpack": "^5.73.0",
+    "@nuxtjs/contentstack-module": "node_modules/contentstack-delivery-module"
+  }
+}
